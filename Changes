@@ -1,0 +1,14 @@
+This file documents the revision history for Perl extension WWW-Yandex-PhoneDetector.
+
+1.03  Thu Sep 03 22:40:00 2010
+	- Rename Module WWW-Yandex-PhoneDetector
+
+1.02  Thu Jul 29 16:26:00 2010
+	- Fix documentation and delete module Data::Dumper
+
+1.01  Thu Jul 29 16:26:00 2010
+	- Fix documentation.
+
+1.00  Thu Jul 29 11:43:05 2010
+	- First release.
+
