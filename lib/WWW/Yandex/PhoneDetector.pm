@@ -6,7 +6,7 @@ use XML::LibXML;
 
 # Version
 use vars qw($VERSION);
-$VERSION = '1.03';
+$VERSION = '1.04';
 
 # Constants
 use constant LWP_USER_AGENT=>'Mozilla/5.0 (compatible; WWW::Yandex::PhoneDetector/1.03; +http://search.cpan.org/~kostya/WWW-Yandex-PhoneDetector/)';
