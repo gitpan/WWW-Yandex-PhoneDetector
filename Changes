@@ -1,7 +1,10 @@
 This file documents the revision history for Perl extension WWW-Yandex-PhoneDetector.
 
+1.05  Thu Sep 05 08:43:00 2010
+	- Fix method flush
+
 1.04  Thu Sep 04 13:00:00 2010
-	- FiX FreeBSD
+	- Fix FreeBSD
 
 1.03  Thu Sep 03 22:40:00 2010
 	- Rename Module WWW-Yandex-PhoneDetector

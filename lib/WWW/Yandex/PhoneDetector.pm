@@ -6,7 +6,7 @@ use XML::LibXML;
 
 # Version
 use vars qw($VERSION);
-$VERSION = '1.04';
+$VERSION = '1.05';
 
 # Constants
 use constant LWP_USER_AGENT=>'Mozilla/5.0 (compatible; WWW::Yandex::PhoneDetector/1.03; +http://search.cpan.org/~kostya/WWW-Yandex-PhoneDetector/)';
@@ -226,7 +226,7 @@ Returns 1 if a mobile phone
 Returns the string with an error
 
 
-=head2 C<is_flush>
+=head2 C<flush>
 
 	$phone_detector->is_flush()
 
