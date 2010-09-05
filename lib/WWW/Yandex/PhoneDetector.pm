@@ -6,7 +6,7 @@ use XML::LibXML;
 
 # Version
 use vars qw($VERSION);
-$VERSION = '1.05';
+$VERSION = '1.06';
 
 # Constants
 use constant LWP_USER_AGENT=>'Mozilla/5.0 (compatible; WWW::Yandex::PhoneDetector/1.03; +http://search.cpan.org/~kostya/WWW-Yandex-PhoneDetector/)';
@@ -228,7 +228,7 @@ Returns the string with an error
 
 =head2 C<flush>
 
-	$phone_detector->is_flush()
+	$phone_detector->flush()
 
 Cleans internal buffer
 
