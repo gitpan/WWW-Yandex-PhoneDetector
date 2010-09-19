@@ -1,5 +1,8 @@
 This file documents the revision history for Perl extension WWW-Yandex-PhoneDetector.
 
+1.07  Thu Sep 19 12:39:00 2010
+	- Fix UserAgent
+
 1.06  Thu Sep 05 08:43:00 2010
 	- Fix doc
 

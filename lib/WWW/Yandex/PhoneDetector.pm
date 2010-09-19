@@ -6,11 +6,9 @@ use XML::LibXML;
 
 # Version
 use vars qw($VERSION);
-$VERSION = '1.06';
+$VERSION = '1.07';
 
 # Constants
-use constant LWP_USER_AGENT=>'Mozilla/5.0 (compatible; WWW::Yandex::PhoneDetector/1.03; +http://search.cpan.org/~kostya/WWW-Yandex-PhoneDetector/)';
-use constant LWP_TIMEOUT=>10;
 use constant PHD_HOST=>'http://phd.yandex.net/detect';
 
 
@@ -20,7 +18,7 @@ sub new {
 	my $self  = {};
 	bless($self, $class);
 	$self->{'ua'} = LWP::UserAgent->new();
-	$self->{'ua'}->agent(LWP_USER_AGENT);
+	$self->{'ua'}->agent('Mozilla/5.0 (compatible; WWW::Yandex::PhoneDetector/'+$VERSION+'; +http://search.cpan.org/~kostya/WWW-Yandex-PhoneDetector/lib/WWW/Yandex/PhoneDetector.pm)');
 	$self->{'params'} = [];
 	$self->{'is_error'} = '';
 	$self->{'is_phone'} = '';
@@ -31,13 +29,13 @@ sub new {
 
 sub lwp_user_agent {
 	my $self = shift;
-	my $agent = shift || LWP_USER_AGENT;
+	my $agent = shift || 'Mozilla/5.0 (compatible; WWW::Yandex::PhoneDetector/'+$VERSION+'; +http://search.cpan.org/~kostya/WWW-Yandex-PhoneDetector/lib/WWW/Yandex/PhoneDetector.pm)';
 	$self->{'ua'}->agent($agent);
 }
 
 sub lwp_timeout {
 	my $self = shift;
-	my $timeout = shift || LWP_TIMEOUT;
+	my $timeout = shift || 10;
 	$self->{'ua'}->timeout($timeout);
 }
 
